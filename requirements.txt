@@ -1,0 +1,6 @@
+# Pinned runtime dependencies for Colab (`!pip install -r requirements.txt`).
+# Local installs should use `pip install -e .` which reads pyproject.toml.
+whisperx>=3.1.1
+typer[all]>=0.12
+python-dotenv>=1.0
+rich>=13.0
