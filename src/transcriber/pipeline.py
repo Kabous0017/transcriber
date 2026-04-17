@@ -65,7 +65,11 @@ def transcribe(audio_path: Path, config: Config) -> dict[str, Any]:
     _free_vram()
 
     with console.status("[cyan]Loading pyannote diarization pipeline..."):
-        diarize_model = DiarizationPipeline(token=config.hf_token, device=config.device)
+        diarize_model = DiarizationPipeline(
+            model_name="pyannote/speaker-diarization-3.1",
+            token=config.hf_token,
+            device=config.device,
+        )
 
     with console.status("[cyan]Diarizing speakers..."):
         diarize_segments = diarize_model(
