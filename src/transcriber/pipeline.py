@@ -42,6 +42,7 @@ def transcribe(audio_path: Path, config: Config) -> dict[str, Any]:
         )
 
     import whisperx
+    from whisperx.diarize import DiarizationPipeline
 
     audio = whisperx.load_audio(str(audio_path))
 
@@ -64,9 +65,7 @@ def transcribe(audio_path: Path, config: Config) -> dict[str, Any]:
     _free_vram()
 
     with console.status("[cyan]Loading pyannote diarization pipeline..."):
-        diarize_model = whisperx.DiarizationPipeline(
-            use_auth_token=config.hf_token, device=config.device
-        )
+        diarize_model = DiarizationPipeline(token=config.hf_token, device=config.device)
 
     with console.status("[cyan]Diarizing speakers..."):
         diarize_segments = diarize_model(
