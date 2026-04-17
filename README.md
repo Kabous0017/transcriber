@@ -23,9 +23,10 @@ recordings. This repo is a free alternative with:
 For your first run, plan on ~5 minutes of setup plus whatever it takes Colab to transcribe your
 file (roughly 15–25 minutes for a 6-hour recording on a free T4).
 
-1. **Accept pyannote model terms** (once, free). Log in to Hugging Face, then click **"Agree"** on:
+1. **Accept pyannote model terms** (once, free). Log in to Hugging Face, then click **"Agree"** on all three:
    - <https://huggingface.co/pyannote/speaker-diarization-3.1>
    - <https://huggingface.co/pyannote/segmentation-3.0>
+   - <https://huggingface.co/pyannote/speaker-diarization-community-1>
 2. **Create a Hugging Face read token** at <https://huggingface.co/settings/tokens>. Name it
    something like `transcriber-colab`.
 3. **Open the notebook** via the "Open in Colab" badge above.
