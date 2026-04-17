@@ -9,7 +9,7 @@ from typing import Any
 
 def _fmt_timestamp(seconds: float, sep: str = ",") -> str:
     """Format seconds as HH:MM:SS,mmm (SRT) or HH:MM:SS.mmm (VTT)."""
-    ms = int(round(seconds * 1000))
+    ms = round(seconds * 1000)
     hours, ms = divmod(ms, 3_600_000)
     minutes, ms = divmod(ms, 60_000)
     secs, ms = divmod(ms, 1000)

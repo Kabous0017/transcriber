@@ -59,9 +59,7 @@ def transcribe(audio_path: Path, config: Config) -> dict[str, Any]:
         )
 
     with console.status("[cyan]Aligning word-level timestamps..."):
-        result = whisperx.align(
-            result["segments"], align_model, metadata, audio, config.device
-        )
+        result = whisperx.align(result["segments"], align_model, metadata, audio, config.device)
     del align_model
     _free_vram()
 

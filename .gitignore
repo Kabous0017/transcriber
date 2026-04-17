@@ -3,6 +3,9 @@
 .env.local
 .env.*.local
 
+# Personal/internal docs (never committed)
+docs/internal/
+
 # Python
 __pycache__/
 *.py[cod]
