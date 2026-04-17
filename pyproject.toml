@@ -37,8 +37,8 @@ dev = [
 transcriber = "transcriber.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/OWNER/REPO"
-Issues = "https://github.com/OWNER/REPO/issues"
+Homepage = "https://github.com/Kabous0017/transcriber"
+Issues = "https://github.com/Kabous0017/transcriber/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/transcriber"]

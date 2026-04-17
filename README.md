@@ -6,9 +6,7 @@ Free, local + Colab speech transcription with speaker diarization for long audio
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OWNER/REPO/blob/main/notebooks/transcribe_colab.ipynb)
-
-> Replace `OWNER/REPO` in the Colab badge URL above after you push to GitHub.
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kabous0017/transcriber/blob/main/notebooks/transcribe_colab.ipynb)
 
 ## Why this exists
 
@@ -45,7 +43,7 @@ For privacy-sensitive recordings or offline use.
 NVIDIA GPU with CUDA (CPU works but is slow).
 
 ```bash
-git clone https://github.com/OWNER/REPO.git transcriber
+git clone https://github.com/Kabous0017/transcriber.git
 cd transcriber
 python -m venv .venv
 # Windows:
